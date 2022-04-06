@@ -49,15 +49,17 @@ console.log(numeriInseriti);
 // setInterval(nomeFunzione, tempoPerOgniRipetizione);
 let timer = setInterval(contoRovescia, 1000);
 function contoRovescia(){
-  let tempo = 3000;
+  let tempo = 3;
   console.log(tempo);
-  if(tempo === 1){
+  if(tempo === 0){
     alert("Tempo scaduto!"); 
     clearInterval(timer);
   } tempo--;
       console.log("tempo scaduto: ", tempo);
       document.getElementById('app').innerHTML += `<div>Tempo: ${tempo}</div>`;
-}clearInterval(timer);
+}
+clearInterval(timer);
 
 
 // Per terminare l’esecuzione di setTimeout() si usa clearTimeout.
+
